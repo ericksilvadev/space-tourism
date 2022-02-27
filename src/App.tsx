@@ -1,9 +1,19 @@
-import moon from './assets/douglas-hurley.svg'
+import { Route, Routes } from 'react-router-dom';
+
+import { GlobalStyle } from './styles/global';
+import { Home } from './pages/Home';
 
 function App() {
   return (
-    <img src='https://www.figma.com/file/hIl1C6cMwpEBgNX94gb796/space-tourism-website?node-id=0%3A1109' alt="" />
-  )
+    <>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          {/* <Route index element={<Home />} /> */}
+        </Route>
+      </Routes>
+      <GlobalStyle />
+    </>
+  );
 }
 
-export default App
+export default App;
