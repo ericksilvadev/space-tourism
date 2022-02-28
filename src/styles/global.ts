@@ -2,9 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --black: '#0B0D17';
-    --text: '#D0D6F9';
-    --main: '#FFFFFF'
+    --black: #0B0D17;
+    --text: #D0D6F9;
   }
 
   * {
@@ -26,21 +25,27 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4, button {
-    font-family: Bellefair;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
     text-transform: uppercase;
   }
 
   h5, span {
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
   }
 
   p, li, a {
     font-family: Barlow;
-    color: white;
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: var(--text);
   }
 
   h1 {
-    font-size: 15rem;
+    font-size: 14.5rem;
   }
 
   h2 {
@@ -59,9 +64,12 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 2.8rem;
     letter-spacing: 0.475rem;
     text-transform: uppercase;
+    color: var(--text);
   }
 
   button {
+    font-size: 3.2rem;
     cursor: pointer;
+    color: var(--black);
   }
 `;
