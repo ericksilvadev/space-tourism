@@ -1,15 +1,23 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
 import { Container } from './style';
 
 export const Header = () => {
+  const [displayMenu, setDisplayMenu] = useState(false);
   const { pathname } = useLocation();
   return (
     <Container>
       <img src={logo} alt="Logo" />
-
-      <nav>
+      <button
+        type="button"
+        onClick={() => setDisplayMenu(!displayMenu)}
+        className="nav-btn"
+      >
+        <div className={displayMenu ? 'burger-menu active' : 'burger-menu'} />
+      </button>
+      <nav className={displayMenu ? 'display' : ''}>
         <ul>
           <Link className={pathname === '/' ? 'selected' : ''} to="/">
             <li>

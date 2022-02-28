@@ -15,13 +15,14 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 10px;
+    overflow: hidden;
 
     @media (max-width: 768px) {
       font-size: 9px;
     }
 
     @media (max-width: 420px) {
-      font-size: 6px;
+      font-size: 6.5px;
     }
   }
 
