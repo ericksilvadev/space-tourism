@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { darken, transparentize } from 'polished';
+import { transparentize } from 'polished';
 
 export const Container = styled.header`
   display: flex;
@@ -69,6 +69,35 @@ export const Container = styled.header`
       width: 70%;
       background-color: ${transparentize(0.75, '#979797')};
       left: -68%;
+    }
+  }
+
+  @media (max-width: 820px) {
+    height: 10rem;
+    padding: 0;
+    padding-left: 4rem;
+
+    nav {
+      height: 100%;
+      padding: 0 4rem;
+      width: 65%;
+
+      ul {
+        width: 100%;
+
+        li {
+          text-transform: uppercase;
+          letter-spacing: 0.19rem;
+
+          strong {
+            display: none;
+          }
+        }
+      }
+
+      &::before {
+        display: none;
+      }
     }
   }
 `;

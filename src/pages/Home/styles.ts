@@ -64,7 +64,7 @@ export const Content = styled(motion.main)`
     justify-content: space-between;
     align-items: center;
 
-    margin: 5rem 0;
+    margin: 11rem 0;
     height: 70%;
 
     .heading {
