@@ -1,13 +1,14 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Container = styled.div`
-  background: #000 url(src/assets/bgs/home.jpg) no-repeat top;
+export const Container = styled(motion.div)`
+  background: #000 url(src/assets/bgs/home.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
 `;
 
-export const Content = styled.div`
+export const Content = styled(motion.main)`
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -54,6 +55,33 @@ export const Content = styled.div`
 
     &:hover::before {
       transform: scale(1.8);
+    }
+  }
+
+  @media (max-width: 820px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 5rem 0;
+    height: 70%;
+
+    .heading {
+      width: 52rem;
+      height: 40rem;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 18rem;
+      }
+      p {
+        line-height: 3rem;
+      }
     }
   }
 `;
