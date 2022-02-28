@@ -25,19 +25,19 @@ export const Header = () => {
             </li>
           </Link>
           <Link
-            className={pathname === 'destination' ? 'selected' : ''}
+            className={pathname === '/destination' ? 'selected' : ''}
             to="/destination"
           >
             <li>
               <strong>01</strong> Destination
             </li>
           </Link>
-          <Link className={pathname === 'crew' ? 'selected' : ''} to="/crew">
+          <Link className={pathname === '/crew' ? 'selected' : ''} to="/crew">
             <li>
               <strong>02</strong> Crew
             </li>
           </Link>
-          <Link className={pathname === 'technology' ? 'selected' : ''} to="/technology">
+          <Link className={pathname === '/technology' ? 'selected' : ''} to="/technology">
             <li>
               <strong>03</strong> Technology
             </li>

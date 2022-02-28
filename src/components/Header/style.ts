@@ -15,6 +15,10 @@ export const Container = styled.header`
     height: 4.8rem;
   }
 
+  .nav-btn {
+    display: none;
+  }
+
   nav {
     width: 55%;
     backdrop-filter: blur(45px);
@@ -75,7 +79,7 @@ export const Container = styled.header`
     }
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: 900px) {
     height: 10rem;
     padding: 0;
     padding-left: 4rem;
@@ -106,6 +110,7 @@ export const Container = styled.header`
   @media (max-width: 500px) {
     height: 13rem;
     .nav-btn {
+      display: block;
       width: 4rem;
       height: 4rem;
       background-color: transparent;

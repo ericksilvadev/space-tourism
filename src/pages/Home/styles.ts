@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
-  background: #000 url(src/assets/bgs/home.jpg) no-repeat;
-  background-size: cover;
   height: 100vh;
   width: 100%;
 `;

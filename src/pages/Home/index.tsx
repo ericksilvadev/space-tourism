@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-import { Header } from '../../components/Header';
 import { Container, Content } from './styles';
 
 export const Home = () => {
@@ -28,7 +27,6 @@ export const Home = () => {
 
   return (
     <Container>
-      <Header />
       <Content>
         <div className="heading">
           <motion.h5

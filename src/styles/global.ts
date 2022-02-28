@@ -81,4 +81,30 @@ export const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     color: var(--black);
   }
+
+  .background {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    transition: 0.8s;
+
+    &.home {
+      background: url(src/assets/bgs/home.png) no-repeat top;
+      background-size: cover;
+    }
+    &.destination {
+      background: url(src/assets/bgs/destination.png) no-repeat top;
+      background-size: cover;
+    }
+    &.crew {
+      background: url(src/assets/bgs/crew.png) no-repeat bottom;
+      background-size: cover;
+    }
+    &.tech {
+      background: url(src/assets/bgs/tech.png) no-repeat top;
+      background-size: cover;
+    }
+  }
 `;
