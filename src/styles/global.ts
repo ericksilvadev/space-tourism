@@ -99,7 +99,7 @@ export const GlobalStyle = createGlobalStyle`
       background-size: cover;
     }
     &.crew {
-      background: url(src/assets/bgs/crew.png) no-repeat bottom;
+      background: url(src/assets/bgs/crew.png) no-repeat top;
       background-size: cover;
     }
     &.tech {
