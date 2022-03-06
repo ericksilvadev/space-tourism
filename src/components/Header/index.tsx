@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import logo from '../../assets/logo.svg';
-import { Container } from './style';
+import { Container } from './styles';
 
 export const Header = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -25,19 +25,19 @@ export const Header = () => {
             </li>
           </Link>
           <Link
-            className={pathname === '/destination' ? 'selected' : ''}
-            to="/destination"
+            className={pathname.includes('destination') ? 'selected' : ''}
+            to="/destination/moon"
           >
             <li>
               <strong>01</strong> Destination
             </li>
           </Link>
-          <Link className={pathname === '/crew' ? 'selected' : ''} to="/crew">
+          <Link className={pathname.includes('crew') ? 'selected' : ''} to="/crew">
             <li>
               <strong>02</strong> Crew
             </li>
           </Link>
-          <Link className={pathname === '/technology' ? 'selected' : ''} to="/technology">
+          <Link className={pathname.includes('tech') ? 'selected' : ''} to="/technology">
             <li>
               <strong>03</strong> Technology
             </li>

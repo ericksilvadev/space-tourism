@@ -61,7 +61,7 @@ export const Home = () => {
           </motion.p>
         </div>
 
-        <Link to="/destination">
+        <Link to="/destination/moon">
           <motion.button
             variants={btnVariants}
             initial={{ opacity: 0 }}
