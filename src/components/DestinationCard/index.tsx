@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 
 import { Container } from './styles';
 import moonImg from '../../assets/moon.svg';
@@ -19,6 +19,8 @@ export const DestinationCard = () => {
     titan: titanImg,
   };
 
+  const { pathname } = useLocation();
+
   const { id } = useParams();
 
   const destination = destinations.find((dest) => dest.name === id);
@@ -26,17 +28,44 @@ export const DestinationCard = () => {
   return (
     <Container>
       <img src={destinationsImg[id!]} alt={id} />
+
       <section className="infos">
+        <nav>
+          <Link
+            className={pathname.includes('moon') ? 'selected' : ''}
+            to="/destination/moon"
+          >
+            Moon
+          </Link>
+          <Link
+            className={pathname.includes('mars') ? 'selected' : ''}
+            to="/destination/mars"
+          >
+            Mars
+          </Link>
+          <Link
+            className={pathname.includes('europa') ? 'selected' : ''}
+            to="/destination/europa"
+          >
+            Europa
+          </Link>
+          <Link
+            className={pathname.includes('titan') ? 'selected' : ''}
+            to="/destination/titan"
+          >
+            Titan
+          </Link>
+        </nav>
         <h1>{destination?.name}</h1>
         <p>{destination?.description}</p>
 
         <div className="travel-info">
           <div>
-            <span>Avg. Distance</span>
+            <h5>Avg. Distance</h5>
             <span>{destination?.distance}</span>
           </div>
           <div>
-            <span>Est. Travel Time</span>
+            <h5>Est. Travel Time</h5>
             <span>{destination?.travelTime}</span>
           </div>
         </div>

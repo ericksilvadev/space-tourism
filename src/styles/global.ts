@@ -5,6 +5,11 @@ export const GlobalStyle = createGlobalStyle`
     --black: #0B0D17;
     --text: #D0D6F9;
   }
+  
+  #root {
+    height: 100%;
+    width: 100%;
+  }
 
   * {
     margin: 0;
@@ -92,18 +97,22 @@ export const GlobalStyle = createGlobalStyle`
 
     &.home {
       background: url(src/assets/bgs/home.png) no-repeat top;
+      background-color: black;
       background-size: cover;
     }
     &.destination {
       background: url(src/assets/bgs/destination.png) no-repeat top;
       background-size: cover;
+      background-color: black;
     }
     &.crew {
       background: url(src/assets/bgs/crew.png) no-repeat top;
+      background-color: black;
       background-size: cover;
     }
     &.tech {
       background: url(src/assets/bgs/tech.png) no-repeat top;
+      background-color: black;
       background-size: cover;
     }
   }

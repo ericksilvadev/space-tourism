@@ -23,8 +23,8 @@ function App() {
     <>
       <div className={`background ${backgroundImgs[path]}`} />
       <Header />
-      <GlobalStyle />
       <Outlet />
+      <GlobalStyle />
     </>
   );
 }
