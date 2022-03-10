@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { transparentize } from 'polished';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: flex;
   justify-content: space-around;
   width: 100%;

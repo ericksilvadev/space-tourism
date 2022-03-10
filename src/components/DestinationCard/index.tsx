@@ -1,10 +1,10 @@
 import { Link, useLocation, useParams } from 'react-router-dom';
 
 import { Container } from './styles';
-import moonImg from '../../assets/moon.svg';
-import marsImg from '../../assets/mars.svg';
-import europaImg from '../../assets/europa.svg';
-import titanImg from '../../assets/titan.svg';
+import moonImg from '/assets/moon.svg';
+import marsImg from '/assets/mars.svg';
+import europaImg from '/assets/europa.svg';
+import titanImg from '/assets/titan.svg';
 import { destinations } from '../../data/destinations';
 
 type IDestinationImages = {

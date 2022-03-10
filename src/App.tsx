@@ -21,10 +21,10 @@ function App() {
 
   return (
     <>
-      <div className={`background ${backgroundImgs[path]}`} />
       <Header />
       <Outlet />
       <GlobalStyle />
+      <div className={`background ${backgroundImgs[path]}`} />
     </>
   );
 }

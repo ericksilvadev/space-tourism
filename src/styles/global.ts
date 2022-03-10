@@ -96,22 +96,22 @@ export const GlobalStyle = createGlobalStyle`
     transition: 0.8s;
 
     &.home {
-      background: url(src/assets/bgs/home.png) no-repeat top;
+      background: url(/assets/bgs/home.png) no-repeat top;
       background-color: black;
       background-size: cover;
     }
     &.destination {
-      background: url(src/assets/bgs/destination.png) no-repeat top;
+      background: url(/assets/bgs/destination.png) no-repeat top;
       background-size: cover;
       background-color: black;
     }
     &.crew {
-      background: url(src/assets/bgs/crew.png) no-repeat top;
+      background: url(/assets/bgs/crew.png) no-repeat top;
       background-color: black;
       background-size: cover;
     }
     &.tech {
-      background: url(src/assets/bgs/tech.png) no-repeat top;
+      background: url(/assets/bgs/tech.png) no-repeat top;
       background-color: black;
       background-size: cover;
     }
